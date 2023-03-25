@@ -12,7 +12,7 @@ namespace AlgorithmPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose Option to perform\n1.Binary Search for Word \n2.Insertion Sort \n3.Bubble sort \n4.Anagram \n5.Exit");
+                Console.WriteLine("\nChoose Option to perform\n1.Binary Search for Word \n2.Insertion Sort \n3.Bubble sort \n4.Anagram \n5.Prime Range NUmber \n6.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -32,7 +32,11 @@ namespace AlgorithmPrograms
                             Anagram anagram = new Anagram();
                         anagram.CheckAnagram();
                         break;
-                        case 5:
+                    case 5:
+                        PrimeRangeNUmbner primeRangeNUmbner = new PrimeRangeNUmbner();
+                        primeRangeNUmbner.PrimeRange();
+                        break;
+                        case 6:
                         flag = false;
                         break;
                 }
