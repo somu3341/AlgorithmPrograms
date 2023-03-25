@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgorithmPrograms.DataStructureProblems.UnOrderedList
+namespace AlgorithmPrograms.DataStructureProblems
 {
-    public class LinkedListOperation
+    public class UnOrderList
     {
         public void ReadFile(string filepath)
         {
@@ -18,8 +18,8 @@ namespace AlgorithmPrograms.DataStructureProblems.UnOrderedList
                 list.Add(data);
             }
             string input = Console.ReadLine();
-            int result=list.Search(input);
-            if(result != -1)
+            int result = list.Search(input);
+            if (result != -1)
             {
                 Console.WriteLine("Found");
                 list.DeleteNodeAtParticularPosition(result);
