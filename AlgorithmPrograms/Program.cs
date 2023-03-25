@@ -1,6 +1,7 @@
 ﻿using AlgorithmPrograms.AnagramDetection;
 using AlgorithmPrograms.BinarySearch;
 using AlgorithmPrograms.BubbleSort;
+using AlgorithmPrograms.CustomizeMessage;
 using AlgorithmPrograms.InsertionSort;
 using System;
 namespace AlgorithmPrograms
@@ -12,7 +13,8 @@ namespace AlgorithmPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose Option to perform\n1.Binary Search for Word \n2.Insertion Sort \n3.Bubble sort \n4.Anagram \n5.Prime Range NUmber \n6.Exit");
+                Console.WriteLine("\nChoose Option to perform\n1.Binary Search for Word \n2.Insertion Sort \n3.Bubble sort " +
+                    "\n4.Anagram \n5.Prime Range NUmber \n6.Customize Message \n7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -35,8 +37,12 @@ namespace AlgorithmPrograms
                     case 5:
                         PrimeRangeNUmbner primeRangeNUmbner = new PrimeRangeNUmbner();
                         primeRangeNUmbner.PrimeRange();
-                        break;
+                        break;       
                         case 6:
+                        CustomizeDeatils customizeDeatils = new CustomizeDeatils();
+                        customizeDeatils.Customize();
+                        break;
+                        case 7:
                         flag = false;
                         break;
                 }
