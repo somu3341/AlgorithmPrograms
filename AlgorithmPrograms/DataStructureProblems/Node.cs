@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgorithmPrograms.DataStructureProblems.UnOrderedList
+namespace AlgorithmPrograms.DataStructureProblems
 {
     public class Node<T>
     {
