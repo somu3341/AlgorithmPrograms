@@ -74,21 +74,5 @@ namespace AlgorithmPrograms.DataStructureProblems.BalancedParentheses
             }
             return count;
         }
-        public void Dequeue()
-        {
-            if (this.head == null)
-            {
-                Console.WriteLine("Queue is empty,Deleltion is not Possible");
-                return;
-            }
-            else
-            {
-                while (this.head != null)
-                {
-                    Console.WriteLine("value Dequeue is {0}", this.head.data);
-                    this.head = this.head.next;
-                }
-            }
-        }
     }
 }
