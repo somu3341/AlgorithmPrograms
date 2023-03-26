@@ -19,7 +19,7 @@ namespace AlgorithmPrograms
             {
                 Console.WriteLine("\nChoose Option to perform\n1.Binary Search for Word \n2.Insertion Sort \n3.Bubble sort " +
                     "\n4.Anagram \n5.Prime Range NUmber \n6.Customize Message \n7.UnOrder List(Data Structure Problems)" +
-                    " \n8.Ordered List \n9.Balanced Parentheses \n10.Banking cash Counter \n11.Merge Sort\n12.Exit");
+                    " \n8.Ordered List \n9.Balanced Parentheses \n10.Banking cash Counter \n11.Merge Sort \n12.Check(Prime,Palindrome And Anagram) \n13.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -68,6 +68,10 @@ namespace AlgorithmPrograms
                         merge.MergeSorting(@"D:\BridgeLabs\AlgorithmPrograms\AlgorithmPrograms\MergeSort\File.txt");
                         break;
                         case 12:
+                        PrimePalindromeAnagram prime= new PrimePalindromeAnagram();
+                        prime.ChekPrime();
+                        break;
+                        case 13:
                         flag = false;
                         break;
                 }
