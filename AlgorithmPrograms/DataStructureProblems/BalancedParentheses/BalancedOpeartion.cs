@@ -15,9 +15,9 @@ namespace AlgorithmPrograms.DataStructureProblems.BalancedParentheses
             string[] words = readData.Split(" ");
             foreach (var data in words)
             {
-                if (data.Equals("("))
+                if (data.Equals('('))
                     list.Push(data);
-                if (data.Equals(")"))
+                if (data.Equals(')'))
                     list.Pop();
             }
             list.Peek();
