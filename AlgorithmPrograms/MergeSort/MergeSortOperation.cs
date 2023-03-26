@@ -26,7 +26,7 @@ namespace AlgorithmPrograms.MergeSort
             int last = words.Length;
             Merge(arr, first, last - 1);
             Console.WriteLine("After Sorting");
-            Console.WriteLine("--------------");
+            Console.WriteLine("---------------");
             Display(arr, first, last);
         }
         public void Merge(int[] arr, int first, int last)
