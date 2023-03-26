@@ -6,6 +6,8 @@ using AlgorithmPrograms.DataStructureProblems;
 using AlgorithmPrograms.DataStructureProblems.BalancedParentheses;
 using AlgorithmPrograms.DataStructureProblems.BankingCashCounter;
 using AlgorithmPrograms.InsertionSort;
+using AlgorithmPrograms.MergeSort;
+
 namespace AlgorithmPrograms
 {
     class Program
@@ -17,7 +19,7 @@ namespace AlgorithmPrograms
             {
                 Console.WriteLine("\nChoose Option to perform\n1.Binary Search for Word \n2.Insertion Sort \n3.Bubble sort " +
                     "\n4.Anagram \n5.Prime Range NUmber \n6.Customize Message \n7.UnOrder List(Data Structure Problems)" +
-                    " \n8.Ordered List \n9.Balanced Parentheses \n10.Banking cash Counter \n11.Exit");
+                    " \n8.Ordered List \n9.Balanced Parentheses \n10.Banking cash Counter \n11.Merge Sort\n12.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -62,6 +64,10 @@ namespace AlgorithmPrograms
                         bankingOpeartion.Opeartion();
                         break;
                         case 11:
+                        MergeSortOperation merge= new MergeSortOperation();
+                        merge.MergeSorting(@"D:\BridgeLabs\AlgorithmPrograms\AlgorithmPrograms\MergeSort\File.txt");
+                        break;
+                        case 12:
                         flag = false;
                         break;
                 }
