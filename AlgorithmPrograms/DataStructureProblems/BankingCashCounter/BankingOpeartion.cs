@@ -9,7 +9,7 @@ namespace AlgorithmPrograms.DataStructureProblems.BankingCashCounter
     public class BankingOpeartion
     {
         LinkedListQueue<string> queue = new LinkedListQueue<string>();
-        int amount = 1000;
+        int amount = 10000;
         public BankingOpeartion()
         {
             queue.Enqueue("a");
@@ -22,7 +22,7 @@ namespace AlgorithmPrograms.DataStructureProblems.BankingCashCounter
             int count = queue.Size();
             for (int i = 0; i < count; i++)
             {
-                Console.WriteLine("Enetr an option to operate \n1.Withdraw \n2.Deposit \n3.CheckBalance");
+                Console.WriteLine("\n.Enetr an option to operate \n1.Withdraw \n2.Deposit \n3.CheckBalance");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -37,7 +37,7 @@ namespace AlgorithmPrograms.DataStructureProblems.BankingCashCounter
                         break;                       
                 }
                 queue.Dequeue();
-            }
+            }            
         }
         public void CheckBalance()
         {
